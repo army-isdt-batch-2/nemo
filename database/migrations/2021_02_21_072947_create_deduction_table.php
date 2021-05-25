@@ -18,10 +18,10 @@ class CreateDeductionTable extends Migration
             $table->enum('contribution_type',[
                 'Tax' , 'SSS' , 'Philhealth' , 'Pag Ibig'
             ]);
-            $table->integer('basic_range');
-            $table->integer('employer_share');
-            $table->integer('employee_share');
-            $table->integer('monthly_contribution');
+            $table->integer('basic_range')->index();
+            $table->integer('employer_share')->index();
+            $table->integer('employee_share')->index();
+            $table->integer('monthly_contribution')->index();
           
 
             $table->timestamps();
