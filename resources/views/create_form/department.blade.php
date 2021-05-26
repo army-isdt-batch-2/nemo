@@ -12,7 +12,12 @@
                           Create Department
                         </h4>
                     </div>
-                   
+                    <div class="col-2">
+                        <a href="/" class="btn btn-danger">Cancel</a>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <form action="/department/save" method="post">
+                            @csrf
                     <div class="col-12">
                         <hr>    
                     </div>                   
@@ -20,7 +25,7 @@
                             <form class="row g-3">
                                 <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Department</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <input type="text" class="form-control" name="department">
                                 </div>
                                
                                
