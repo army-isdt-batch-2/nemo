@@ -20,7 +20,7 @@
                             <form class="row g-3">
                                 <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Attendance Date</label>
-                                <input type="date" class="form-control" id="inputEmail4">
+                                <input type="date" class="form-control" name="attendance">
                                 </div>
                                 <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Save</button>

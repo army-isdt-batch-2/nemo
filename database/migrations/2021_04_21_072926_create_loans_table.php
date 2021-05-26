@@ -16,11 +16,12 @@ class CreateLoanTable extends Migration
         Schema::create('loan', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('employees_id')->index();
+            $table->string('full_name')->index();
             $table->enum('loan_type',[
                 'Tax' , 'SSS' , 'Philhealth' , 'Pag Ibig'
             ])->index();
-            $table->string('amount')->index();
-            $table->string('months_payable')->index();
+            $table->string('loan_amount')->index();
+            $table->string('mounts_payable')->index();
             $table->string('notes')->index();
             ;
             $table->timestamps();

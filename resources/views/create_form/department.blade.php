@@ -16,7 +16,7 @@
                         <a href="/" class="btn btn-danger">Cancel</a>
                     </div>
                     <div class="col-12 mt-5">
-                        <form action="/department/save" method="post">
+                        <form action="/department/create" method="post">
                             @csrf
                     <div class="col-12">
                         <hr>    
@@ -25,7 +25,7 @@
                             <form class="row g-3">
                                 <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Department</label>
-                                <input type="text" class="form-control" name="department">
+                                <input type="text" class="form-control" name="department_name">
                                 </div>
                                
                                

@@ -40,7 +40,7 @@ Route::get('/login', [
 
  Route::get('/department', [
     App\http\Controllers\LoginController::class,
-    'department'
+    'index'
     
  ])->name('department');
 

@@ -20,35 +20,35 @@
                   </div>
                   <div class="col-md-4">
                      <label for="inputPassword4" class="form-label">Employee id</label>
-                     <input type="text" class="form-control" id="inputPassword4">
+                     <input type="text" class="form-control" name="employee_id">
                   </div>
                   <div class="col-md-4">
                      <label for="inputPassword4" class="form-label">Full Name</label>
-                     <input type="text" class="form-control" id="inputPassword4">
+                     <input type="text" class="form-control" name="full_name">
                   </div>
                   <div class="col-md-4">
                      <label for="inputPassword4" class="form-label">Designation</label>
-                     <input type="text" class="form-control" id="inputPassword4">
+                     <input type="text" class="form-control" name="designation">
                   </div>
                 
                   <div class="col-md-4">
                     <div class="col-md-12">
                         <label for="inputPassword4" class="form-label">Loan Type</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <input type="text" class="form-control" name="loan_type">
                     </div>
                      <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">Loan Amount</label>
-                        <input type="number" class="form-control" id="inputEmail4">
+                        <input type="number" class="form-control" name="loan_amount">
                      </div>
                      <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">Mounts Payable</label>
-                        <input type="number" class="form-control" id="inputEmail4">
+                        <input type="number" class="form-control" name="mounts_payable">
                      </div>
                   </div>
                   <div class="col-md-8">
                      <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">Address</label>
-                        <textarea rows="7" class="form-control"></textarea>
+                        <textarea rows="7" class="form-control" name="address" placeholder="1234 Main St">
                      </div>
                   </div>
                   <div class="col-12">

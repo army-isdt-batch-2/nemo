@@ -13,34 +13,37 @@
                         </h4>
                     </div>
                    
-                    <div class="col-12">
-                        <hr>    
-                    </div>                   
-                    <div class="col-12">
+                    <<div class="col-2">
+                        <a href="/" class="btn btn-danger">Cancel</a>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <form action="/employees/save" method="post">
+                            @csrf
+               
                             <form class="row g-3">
                                 <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <input type="email" class="form-control" name="inputEmail4">
                                 </div>
                                 <div class="col-md-6">
                                 <label for="inputPassword4" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="inputPassword4">
+                                <input type="password" class="form-control" name="inputPassword4">
                                 </div>
                                 <div class="col-12">
                                 <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St">
                                 </div>
                                 <div class="col-12">
                                 <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                <input type="text" class="form-control" name="inputAddress2" placeholder="Apartment, studio, or floor">
                                 </div>
                                 <div class="col-md-6">
                                 <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input type="text" class="form-control" name="inputCity">
                                 </div>
                                 <div class="col-md-4">
                                 <label for="inputState" class="form-label">State</label>
-                                <select id="inputState" class="form-select">
+                                <select class="form-control" name="state" required>
                                     <option selected>Choose...</option>
                                     <option>a</option>
                                     <option>a</option>

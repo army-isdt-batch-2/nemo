@@ -1,4 +1,4 @@
-@php $active = 'leaves' @endphp
+name@php $active = 'leaves' @endphp
 @extends('layout.main')
 @section('title', 'leaves')
 @section('content')
@@ -11,43 +11,43 @@
                   Apply Leaves
                </h4>
             </div>
-            <div class="col-12">
-               <hr>
-            </div>
-            <div class="col-12">
-               <form class="row g-3">
-                  <div class="col-md-12">
-                  </div>
+            <<div class="col-2">
+               <a href="/" class="btn btn-danger">Cancel</a>
+           </div>
+           <div class="col-12 mt-5">
+               <form action="/employees/save" method="post">
+                   @csrf
                   <div class="col-md-4">
                      <label for="inputPassword4" class="form-label">Employee id</label>
-                     <input type="text" class="form-control" id="inputPassword4">
+                     <input type="text" class="form-control" name="employee_id">
                   </div>
                   <div class="col-md-4">
                      <label for="inputPassword4" class="form-label">Full Name</label>
-                     <input type="text" class="form-control" id="inputPassword4">
+                     <input type="text" class="form-control" name="Full_name">
                   </div>
                   <div class="col-md-4">
                      <label for="inputPassword4" class="form-label">Designation</label>
-                     <input type="text" class="form-control" id="inputPassword4">
+                     <input type="text" class="form-control" name="designation">
                   </div>
                   <div class="col-md-4">
                     <div class="col-md-12">
                         <label for="inputPassword4" class="form-label">Leave Type</label>
-                        <input type="text" class="form-control" id="inputPassword4">
+                        <input type="text" class="form-control" name="leave_type">
                     </div>
                      <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">Start</label>
-                        <input type="date" class="form-control" id="inputEmail4">
+                        <input type="date" class="form-control" name="start_date">
                      </div>
                      <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">End</label>
-                        <input type="date" class="form-control" id="inputEmail4">
+                        <input type="date" class="form-control" name="end_date">
                      </div>
                   </div>
                   <div class="col-md-8">
                      <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">Address</label>
-                        <textarea rows="7" class="form-control"></textarea>
+                        <textarea rows="7" class="form-control" name="address" placeholder="1234 Main St"></textarea>
+                        
                      </div>
                   </div>
                   <div class="col-12">
