@@ -15,7 +15,7 @@ name@php $active = 'leaves' @endphp
                <a href="/" class="btn btn-danger">Cancel</a>
            </div>
            <div class="col-12 mt-5">
-               <form action="/employees/save" method="post">
+               <form action="/leaves/save" method="post">
                    @csrf
                   <div class="col-md-4">
                      <label for="inputPassword4" class="form-label">Employee id</label>

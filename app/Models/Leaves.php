@@ -23,6 +23,6 @@ class Leaves extends Model
         'end_date',
         'notes'
 
-
+     ];
 
 }

@@ -18,6 +18,12 @@
                     </div>                   
                     <div class="col-12">
                             <form class="row g-3">
+                                <div class="col-2">
+                                    <a href="/" class="btn btn-danger">Cancel</a>
+                                </div>
+                                <div class="col-12 mt-5">
+                                    <form action="/timekeeping/create" method="post">
+                                        @csrf
                                 <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Attendance Date</label>
                                 <input type="date" class="form-control" name="attendance">

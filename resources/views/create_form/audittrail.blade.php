@@ -14,13 +14,8 @@
                     </div>
                    
                     <<div class="col-2">
-                        <a href="/" class="btn btn-danger">Cancel</a>
-                    </div>
-                    <div class="col-12 mt-5">
-                        <form action="/employees/save" method="post">
-                            @csrf
-               
-                            <form class="row g-3">
+                                <form class =" row g-3 " action="{{ URL::route('audittrail.create.save') }}" method="post">
+                                    @csrf
                                 <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
                                 <input type="email" class="form-control" name="inputEmail4">
