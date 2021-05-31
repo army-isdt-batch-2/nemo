@@ -21,4 +21,4 @@ Route::get('/loans/create', [
     App\http\Controllers\LoansController::class,
     'create.save'
     
- ]);
+ ])->name('loans.create.save');

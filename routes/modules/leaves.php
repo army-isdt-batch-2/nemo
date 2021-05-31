@@ -20,5 +20,5 @@ Route::get('/leaves', [
     App\http\Controllers\LeavesController::class,
     'create.save'
     
- ]);
+ ])->name('leaves.create.save');
 

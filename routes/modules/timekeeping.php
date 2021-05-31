@@ -17,8 +17,8 @@ Route::get('/timekeeping/create', [
     
  ])->name('timekeeping.create');
 
- Route::get('/timekeeping/create/save', [
+ Route::post('/timekeeping/create/save', [
     App\http\Controllers\TimekeepingController::class,
     'create.save'
     
- ]);
+ ])->name('timekeeping.create.save');

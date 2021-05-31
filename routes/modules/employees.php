@@ -19,4 +19,4 @@ Route::get('/employees', [
     App\http\Controllers\EmployeesController::class,
     'create.save'
     
- ]);
+ ])->name('employees.create.save');

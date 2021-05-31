@@ -18,23 +18,23 @@
                                     @csrf
                                 <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control" name="inputEmail4">
+                                <input type="email" class="form-control" name="email">
                                 </div>
                                 <div class="col-md-6">
                                 <label for="inputPassword4" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="inputPassword4">
+                                <input type="password" class="form-control" name="password">
                                 </div>
                                 <div class="col-12">
                                 <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St">
+                                <input type="text" class="form-control" name="address" placeholder="1234 Main St">
                                 </div>
                                 <div class="col-12">
                                 <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" name="inputAddress2" placeholder="Apartment, studio, or floor">
+                                <input type="text" class="form-control" name="address2" placeholder="Apartment, studio, or floor">
                                 </div>
                                 <div class="col-md-6">
                                 <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" name="inputCity">
+                                <input type="text" class="form-control" name="city">
                                 </div>
                                 <div class="col-md-4">
                                 <label for="inputState" class="form-label">State</label>
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="col-md-2">
                                 <label for="inputZip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
+                                <input type="text" class="form-control" id="zip">
                                 </div>
                                 <div class="col-12">
                                 <div class="form-check">

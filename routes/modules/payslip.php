@@ -20,5 +20,5 @@ Route::get('/payslip', [
     App\http\Controllers\PayslipController::class,
     'create.save'
     
- ]);
+ ])->name('payslip.create.save');
  
