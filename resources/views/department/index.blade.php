@@ -25,30 +25,35 @@
                     </div> 
 
                     <div class="col-12 mt-5">
+                        @if(session('success'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('success')}}
+                            </div>
+                        @endif
                         <table class="table">
                             <thead>
                                 <tr>
-                                    
-                                    <th scope="col">Department</th>
-                                  
-                                    <th scope="col"></th> 
+                                    <th>Department</th>
+                                    <th>Action</th> 
                                 </tr>
                            
                             </thead>
                             <tbody>
                                 <!--$x is the -->
                                 @foreach($data as $x)
-                                <tr> 
-                                    <th scope="row">{{$x->department_name}}</th> 
-                                    <th scope="row">
-                                    <a href="{{ URL::route('update', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
-                                    <a href="{{ URL::route('delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
-                                    </th> 
-                                </tr>
+                                    <tr> 
+                                        <td>{{$x->department_name}}</td> 
+                                        <td style="width: 200px;">
+                                            <a href="{{ URL::route('department.edit', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
+                                            <a href="{{ URL::route('department.delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
+                                        </td> 
+                                    </tr>
                                 @endforeach
                             </tbody>
                         </table>
+                    </div>
                 </div>
-            </div>
+            </div> 
         </div> 
     </div> 
+@endsection

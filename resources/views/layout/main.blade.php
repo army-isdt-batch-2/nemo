@@ -15,7 +15,6 @@
     
     @include('components.header')
   
-    
     <div class="main-content">
         <div class="row">
             <div class="col-3 sidebar">
