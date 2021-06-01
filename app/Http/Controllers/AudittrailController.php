@@ -30,7 +30,12 @@ class AudittrailController extends Controller
         );
 
         return Redirect::route('audittrail');
-
+        Audittrail::create(
+            $this->request->except('_token')
+       
+          );
+  
+          return Redirect::route('audittrail')
 
 
     }
