@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/department', [
     App\Http\Controllers\DepartmentController::class,
-    'department'
+    'index'
 ])->name('department');
 
 Route::get('/department/create', [
