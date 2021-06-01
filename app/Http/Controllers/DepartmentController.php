@@ -22,7 +22,13 @@ class DepartmentController extends Controller
             'data' => Department::all()
         ]);
     }
-    public function save()
+    public function create()
+    {
+        return view ('create_form.department');
+            
+    }
+
+    public function create_save()
     {
         Department::create(
           $this->request->except('_token')

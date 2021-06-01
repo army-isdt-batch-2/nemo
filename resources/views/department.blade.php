@@ -24,42 +24,30 @@
                         <input type="text" class="form-control" placeholder="Search">
                     </div> 
 
-                    <div class="col-12">
-                        <table class="table mt-3">
+                    <div class="col-12 mt-5">
+                        <table class="table">
                             <thead>
                                 <tr>
-                                    <th class="text-muted" scope="col">#</th>
-                                    <th class="text-muted" scope="col">Department</th>
-                                    <th class="text-muted" scope="col">Created</th>
-                                    <th class="text-muted" scope="col">Updated</th>
-                                    <th class="text-muted" scope="col">Action</th>
+                                    
+                                    <th scope="col">Department</th>
+                                  
+                                    <th scope="col"></th> 
                                 </tr>
+                           
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr> 
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr> 
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr> 
+                                <!--$x is the -->
+                                @foreach($data as $x)
+                                <tr> 
+                                    <th scope="row">{{$x->department_name}}</th> 
+                                    <th scope="row">
+                                    <a href="{{ URL::route('update', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
+                                    <a href="{{ URL::route('delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
+                                    </th> 
+                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
-                    </div>
                 </div>
             </div>
         </div> 

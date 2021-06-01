@@ -29,7 +29,7 @@ class EmployeesController extends Controller
      
         );
 
-        return Redirect::route('department');
+        return Redirect::route('employees');
 
 
 

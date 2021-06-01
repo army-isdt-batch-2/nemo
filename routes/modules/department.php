@@ -3,21 +3,22 @@
 use Illuminate\Support\Facades\Route;
 
 
+
 Route::get('/department', [
-    App\http\Controllers\DepartmentController::class,
+    App\Http\Controllers\DepartmentController::class,
     'department'
-    
- ])->name('department');
+])->name('department');
 
- Route::get('/department/create', [
-    App\http\Controllers\DepartmentController::class,
-    'department'
-    
- ])->name('department.create');
+Route::get('/department/create', [
+    App\Http\Controllers\DepartmentController::class,
+    'create'
+])->name('department.create');
 
- Route::post('/department/create/save', [
-    App\http\Controllers\DepartmentController::class,
-    'save'
-    
- ])->name('department.create.save');
- 
+Route::post('/department/create/save', [
+    App\Http\Controllers\DepartmentController::class,
+    'create.save'
+])->name('department.create.save');
+
+
+
+

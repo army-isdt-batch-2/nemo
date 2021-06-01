@@ -18,7 +18,7 @@ class AudittrailController extends Controller
      }
     public function index()
     {
-        return view ('employees')->with([
+        return view ('audittrail')->with([
             'data' => Audittrail::all()
         ]);
     }
@@ -29,7 +29,7 @@ class AudittrailController extends Controller
      
         );
 
-        return Redirect::route('department');
+        return Redirect::route('audittrail');
 
 
 
